@@ -42,8 +42,8 @@ async def remt(event):
   
 @Invix.on(events.NewMessage(incoming=True, pattern=f"{S}"))
 async def start(event):
-    START_PIC = "https://graph.org/file/da97ceca70e55983b4891.png"
-    text = "👋 Hi, I am 'Save Restricted Content ' bot.\n\n✅ Send me the Link of any message of Restricted Channels to Clone it here.\nFor private channel's messages, send the Invite Link first.\n\n👨🏻‍💻Owner: https://telegram.dog/Mister_invisiblebot.\n**support:** https://telegram.dog/mr_invisible_bots"
+    START_PIC = "https://iili.io/J6Blx5b.md.jpg"
+    text = "👋 Hi, I am 'Save Restricted Content ' bot.\n\n✅ Send for private channel's messages, send the Invite Link first."
     #await start_srb(event, text)
     '''
     await event.reply(text, 
@@ -53,10 +53,11 @@ async def start(event):
                               ])                             
     '''                          
     
-    await event.reply(text, 
+    await event.reply(START_PIC,
+                      text,
                       buttons=[
-                              [Button.inline("SET THUMB.", data="set"),
-                               Button.inline("REM THUMB.", data="rem")],
-                              [Button.url("🔰 Maintained and Developed by 🔰", url="https://telegram.dog/mr_invisible_bots")]])
+                              [Button.inline("SET.", data="set"),
+                               Button.inline("REM.", data="rem")],
+                              [Button.url("🌐 MR SATYAM 🌐", url="https://telegram.me/MRSATYAM01")]])
     
     
